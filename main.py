@@ -11,6 +11,7 @@ set_site_information(
     sources=["Gemini"],
     links=[
         "https://github.com/carbon-calculator-laurenbaxter15"],
+    planning=[]
 )
 hide_debug_information()
 set_website_title("Carbon Footprint Calculator")
