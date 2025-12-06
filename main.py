@@ -272,7 +272,7 @@ def update_eating(
     state.food.append(dairy)
     state.food.append(food_waste)
     state.food.append(expired)
-    pass
+    return make_report(state)
 
 
 def electricity_number(response: list[str]) -> list[float]:
