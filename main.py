@@ -2,7 +2,6 @@ from bakery import assert_equal
 from drafter import *
 from dataclasses import dataclass
 from drafter.llm import *
-from meta import *
 
 set_gemini_server("https://drafter-gemini-proxy.wilsonmn.workers.dev/")
 
