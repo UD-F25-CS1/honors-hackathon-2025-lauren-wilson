@@ -2,7 +2,7 @@ from bakery import assert_equal
 from drafter import *
 from dataclasses import dataclass
 '''from drafter.llm import *'''
-from meta import *
+#from meta import *
 
 set_site_information(
     author="lmbaxter@udel.edu",
