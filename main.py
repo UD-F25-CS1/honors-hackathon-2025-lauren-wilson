@@ -34,6 +34,7 @@ def index(state: State) -> Page:
     return Page(
         state,
         [
+            Header(bold("Carbon Footprint Calculator!")),
             "Welcome to the carbon footprint generator! Fill out this brief survey to estimate your carbon footprint and receive tips to improve your lifestyle!",
             Button("Start survey", "personal_info"),
         ],
