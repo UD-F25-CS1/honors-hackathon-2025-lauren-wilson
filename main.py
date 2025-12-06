@@ -256,6 +256,7 @@ def eating(state: State) -> Page:
                 "expired",
                 ["always", "mostly", "sometimes", "rarely", "never"],
             ),
+            Button("continue", "update_eating")
         ],
     )
 
