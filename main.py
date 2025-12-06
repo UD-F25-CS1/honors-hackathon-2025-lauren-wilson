@@ -1,8 +1,10 @@
 from bakery import assert_equal
 from drafter import *
 from dataclasses import dataclass
-'''from drafter.llm import *'''
-#from meta import *
+from drafter.llm import *
+from meta import *
+
+set_gemini_server("https://drafter-gemini-proxy.wilsonmn.workers.dev/")
 
 set_site_information(
     author="lmbaxter@udel.edu",
@@ -272,10 +274,10 @@ def update_eating(
     state.food.append(dairy)
     state.food.append(food_waste)
     state.food.append(expired)
-    return Page(state, [])
+    return make_report(state)
 
 
-'''def electricity_number(response: list[str]) -> list[float]:
+def electricity_number(response: list[str]) -> list[float]:
     # temperature
     e_numbers = []
     light = [
@@ -532,7 +534,7 @@ def make_report(state: State) -> Page:
             + str(us_state),
             "Average carbon footprint of a someone living in the US: 16",
         ],
-    )'''
+    )
 
 
 start_server(State("", "", "", 0.0, [], [], [], []))
